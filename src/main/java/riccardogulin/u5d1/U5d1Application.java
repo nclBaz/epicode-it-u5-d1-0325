@@ -29,6 +29,8 @@ public class U5d1Application {
 		FrontendStudent fes = ctx.getBean(FrontendStudent.class); // Tramite tipo
 		FrontendStudent fes2 = ctx.getBean("aldo", FrontendStudent.class); // Tramite nome bean
 		System.out.println(fes);
+		fes.setName("Claudio");
+		System.out.println(fes);
 		System.out.println(fes2);
 
 		FullstackStudent fullstackStudent = ctx.getBean(FullstackStudent.class);
